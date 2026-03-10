@@ -10,25 +10,26 @@
     <div class="main-container">
         <h1 class="texto">Pedra, papel, tesoura!</h1>
         <br>
-        <h2 class="texto">Escolha sua opção:</h2>
-        <div class="escolha" style="display: none;">
-            <button class="escolha-mao" id="pedra">
+        <h2 class="texto" id="escolha-texto">Escolha sua opção:</h2>
+        <div class="escolha pagina" id="selecao">
+            <button class="botao pessoa" id="pedra">
                 🪨
             </button>
-            <button class="escolha-mao" id="papel">
-                🧻
+            <button class="botao pessoa" id="papel">
+                📝
             </button>
-            <button class="escolha-mao" id="tesoura">
+            <button class="botao pessoa" id="tesoura">
                 ✂️
             </button>
         </div>
-        <div class="disputa">
-            <span></span>
-            <button class="resultado pessoa">🪨</button>
+        <div class="escolha pagina" id="disputa" style="display: none;">
+            <span class="icone">👤</span>
+            <button class="botao pessoa" id="jogar-denovo"></button>
             <span class="texto versus">VS</span>
-            <button class="resultado robo" disabled="disabled">✂️</button>
+            <button class="botao robo" disabled="disabled"></button>
+            <span class="icone">🤖</span>
         </div>
-        <h3 class="texto">Selecione uma opção</h3>
+        <h3 class="texto" id="texto-opcao">Selecione uma opção...</h3>
     </div>
 </body>
 <script src="script.js"></script>
