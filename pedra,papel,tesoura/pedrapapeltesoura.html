@@ -9,11 +9,26 @@
 <body>
     <div class="main-container">
         <h1 class="texto">Pedra, papel, tesoura!</h1>
-        <hr>
+        <br>
         <h2 class="texto">Escolha sua opção:</h2>
-        <div class="escolha">
-
+        <div class="escolha" style="display: none;">
+            <button class="escolha-mao" id="pedra">
+                🪨
+            </button>
+            <button class="escolha-mao" id="papel">
+                🧻
+            </button>
+            <button class="escolha-mao" id="tesoura">
+                ✂️
+            </button>
         </div>
+        <div class="disputa">
+            <span></span>
+            <button class="resultado pessoa">🪨</button>
+            <span class="texto versus">VS</span>
+            <button class="resultado robo" disabled="disabled">✂️</button>
+        </div>
+        <h3 class="texto">Selecione uma opção</h3>
     </div>
 </body>
 <script src="script.js"></script>
