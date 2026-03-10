@@ -59,9 +59,20 @@ button:disabled {
     cursor: not-allowed;
 }
 
+.botao{
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    font-size: 4em;
+}
+
 .pessoa:hover{
     cursor: pointer;
     border: 1px solid black;
+}
+
+.icone{
+    font-size: 5em;
 }
 
 .resultado {
@@ -70,15 +81,6 @@ button:disabled {
     font-size:5em;
     border-radius: 50%;
     transition: border 0.1s;
-}
-
-.disputa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    width: 100%;
-    height: 80%;
 }
 
 .versus{
