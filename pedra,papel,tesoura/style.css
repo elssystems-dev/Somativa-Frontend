@@ -24,7 +24,7 @@ body {
 
 .main-container hr {
     width: 80%;
-    border: 1px;
+    border: 1px solid white;
 }
 
 .main-container .texto {
@@ -37,4 +37,59 @@ body {
 
 .main-container .texto h2 {
     font-size: 2em;
+}
+
+.escolha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    height: 80%;
+}
+
+button{
+    border: none;
+}
+
+button:disabled {
+    opacity: 1;
+    color: white;
+    background-color: #ffffff;
+    cursor: not-allowed;
+}
+
+.pessoa:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.resultado {
+    width: 20%;
+    height: 50%;
+    font-size:5em;
+    border-radius: 50%;
+    transition: border 0.1s;
+}
+
+.disputa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    height: 80%;
+}
+
+.versus{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.mao-escolhida {
+    width: 20%;
+    height: 50%;
+    font-size: 5em;
+    border-radius: 50%;
+    transition: border 0.1s;
 }
