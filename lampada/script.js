@@ -5,12 +5,18 @@ const trocar = document.getElementById("trocar");
 
 const lampada = document.getElementById("lampada");
 
+let quebrada = false; 
+
 function ligarLampada() {
-  lampada.src = "img/lampada-acesa.png";
+  if (!quebrada) {
+    lampada.src = "img/lampada-acesa.png";
+  }
 }
 
 function desligarLampada() {
-  lampada.src = "img/lampada-apagada.png";
+  if (!quebrada) {
+    lampada.src = "img/lampada-apagada.png";
+  }
 }
 
 ligar.addEventListener("click", ligarLampada);
@@ -19,9 +25,11 @@ desligar.addEventListener("click", desligarLampada);
 quebrar.addEventListener("click", function () {
   lampada.src = "img/lampada-quebrada.png";
   lampada.classList.add("lampada-quebrada");
+  quebrada = true; 
 });
 
 trocar.addEventListener("click", function () {
   lampada.src = "img/lampada-apagada.png";
   lampada.classList.remove("lampada-quebrada");
+  quebrada = false; 
 });
