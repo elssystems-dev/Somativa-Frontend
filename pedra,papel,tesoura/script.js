@@ -2,18 +2,12 @@ const mostraSelecao = document.getElementById("selecao");
 const mostraDisputa = document.getElementById("disputa");
 const textoOpcao = document.getElementById("texto-opcao");
 const botoes = document.querySelectorAll(".botao");
-const jogarDenovo = document.getElementById("jogar-denovo");
 
 let escolhaUsuario;
 let escolhaComputador;
 
 // Loop para configurar todos os botões
 botoes.forEach((botao) => {
-
-  if (botao.id === "jogar-denovo") {
-    voltarAoInicio();
-    return;
-  }
 
   botao.addEventListener("mouseenter", () => {
     textoOpcao.textContent =
@@ -23,7 +17,11 @@ botoes.forEach((botao) => {
 
   botao.addEventListener("click", () => {
     escolhaUsuario = botao.id;
-    iniciarDisputa();
+    if (mostraSelecao.style.display === "none") {
+      voltarAoInicio();
+    } else {
+      iniciarDisputa();
+    }
   });
 
 });
@@ -31,12 +29,14 @@ botoes.forEach((botao) => {
 function iniciarDisputa() {
   mostraSelecao.style.display = "none";
   mostraDisputa.style.display = "flex";
+  textoOpcao.style.display = "none";
   gerarEscolhaComputador();
 }
 
 function voltarAoInicio(){
     mostraSelecao.style.display = "flex";
     mostraDisputa.style.display = "none";
+    textoOpcao.style.display = "inline";
 }
 
 function gerarEscolhaComputador() {

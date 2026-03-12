@@ -24,11 +24,13 @@
         Material de apoio: Vídeos no youtube, font awesome (para ícones), google e sites sobre programação.
 
     Pedra / Papel / Tesourra:
-        Ideias:
+        Ideias: Um pequeno container central que serve de painel para o usuário escolher: Pedra, Papel, Tesoura. Após escolhido, gerar um número aleatório para o computador entre 1 a 3 e atribuir este número específico a um poder do jogo. O projeto utilizará de emojis simples para facilitar a implementação gráfica, sem depender de mídias externas.
 
-        Dificuldades:
+        Dificuldades: 
+        - A lógica de programação, seguindo também as normas de desenvolvimento JavaScript de maneira adequada neste primeiro contato mais "formal" com o DOM
+        - Centralizar a div.
 
-        Material de apoio:
+        Material de apoio: Gemini para me propor melhorias de código, como por exemplo usar um `forEach(botao)` invés de escrever cada evento de click separadamente.
 
 # Conclusão
 
