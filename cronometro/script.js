@@ -7,41 +7,42 @@ let voltas = [];
 
 const formatTime = (time) => {
     const hours = Math.floor(time / 360000);
-    const minutes = Math.floor((time % 360000)/6000);
+    const minutes = Math.floor((time % 360000) / 6000);
     const seconds = Math.floor((time % 6000) / 100);
-    const hundredths= time % 100;
+    const hundredths = time % 100;
 
-    return `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}:${hundredths.toString().padStart(2,'0')}`
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}:${hundredths.toString().padStart(2, '0')}`;
 }
 
 const addMarkToList = (markIndex, markTimeValue) => {
-    marksListElement.innerHTML += `<p>Marca ${markIndex}: ${formatTime(markTime)}</p>`
+    marksListElement.innerHTML += `<p>Marca ${markIndex}: ${formatTime(markTimeValue)}</p>`;
 }
 
 const markTime = () => {
-    marksList.push(timer);
+    voltas.push(timer);
     addMarkToList(voltas.length, timer);
 }
 
 const toggleTimer = () => {
     const button = document.getElementById('power');
-    const action = document.getAttribute('action');
+    const action = button.getAttribute('action'); 
     
     clearInterval(intervalid);
 
-    if (action =='start' || action =='continue' ){
+    if (action == 'start' || action == 'continue') {
         intervalid = setInterval(() => {
             timer += 1;
-            setTimer(timer)
+            setTimer(timer);
         }, 10);
-        button.setAttribute('action','pause');
-        button.innerHTML = '<i class="da-solid fa-pause"></i>';
-    } else if (action == 'pause'){
-        button.setAttribute('action','continue');
-        button.innerHTML = '<i class="da-solid fa-play"></i>';
+        button.setAttribute('action', 'pause');
+        button.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    } else if (action == 'pause') {
+        button.setAttribute('action', 'continue');
+        button.innerHTML = '<i class="fa-solid fa-play"></i>';
     }
 }
-const resetTimer = () =>{
+
+const resetTimer = () => {
     clearInterval(intervalid);
     timer = 0;
     voltas = [];
@@ -49,7 +50,7 @@ const resetTimer = () =>{
     marksListElement.innerHTML = '';
     const button = document.getElementById('power');
     button.setAttribute('action', 'start');
-    button.innerHTML = '<i class="da-solid fa-play"></i>';
+    button.innerHTML = '<i class="fa-solid fa-play"></i>';
 }
 
 const setTimer = (time) => {
