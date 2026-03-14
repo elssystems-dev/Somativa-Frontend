@@ -19,6 +19,9 @@ const addMarkToList = (markIndex, markTimeValue) => {
 }
 
 const markTime = () => {
+    if (voltas[voltas.length - 1] === timer) {
+        return; // Impede marcar o mesmo tempo múltiplas vezes
+    }
     voltas.push(timer);
     addMarkToList(voltas.length, timer);
 }
