@@ -28,7 +28,7 @@ botoesUsuario.forEach((botao) => {
   });
 
   botao.addEventListener("mouseleave", () => {
-    if (mostraSelecao.style.display === "flex") textoDinamico("Selecione uma opção...");
+    if (mostraSelecao.style.display === "flex") textoDinamico("...");
   });
 
   botao.addEventListener("click", () => {
@@ -54,7 +54,7 @@ function voltarAoInicio() {
   mostraSelecao.style.display = "flex";
   mostraDisputa.style.display = "none";
   textoOpcao.style.display = "inline";
-  textoDinamico("Selecione uma opção...");
+  textoDinamico("...");
 }
 
 function gerarEscolhaComputador() {
@@ -65,8 +65,8 @@ function gerarEscolhaComputador() {
 
 function batalha(escolhaHumano, escolhaRobo) {
   let resultado = (escolhaHumano - escolhaRobo + 3) % 3
-  // Exemplos:
-  // Humano: Tesoura (2) e Robo: Papel (1) = 2 - 1 + 3 = 4. 4 % 3 = 1 (Vitória Humano)
+  // Exemplo:
+  // Humano: Tesoura (2) e Robo: Papel (1) = 2 - 1 + 3 = 4 | 4 % 3 = 1 (Vitória Humano)
   if (resultado == 0) textoDinamico("Empate!");
   else if (resultado == 1) textoDinamico("Você venceu!");
   else textoDinamico("Você perdeu...");

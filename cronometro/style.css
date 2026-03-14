@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -10,9 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100%;
     background: linear-gradient(180deg, #bbd2ec, #4a0086);
-    
 }
 
 #cronometro {
@@ -60,7 +57,6 @@ body {
 
 #actions button:hover {
     background-color: #c4b5fd;
-
 }
 
 #marks-list {
