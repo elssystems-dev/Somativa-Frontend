@@ -23,6 +23,12 @@ body {
     height: 300px;
 }
 
+#opcoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 button {
     padding: 8px 15px;
     margin: 2px;
