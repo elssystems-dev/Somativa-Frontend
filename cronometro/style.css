@@ -65,6 +65,10 @@ body {
 
 #marks-list {
     display: flex;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(148, 139, 148) transparent;
+    max-height: 30vh;
     flex-direction: column;
     color: #c4b5fd;
     gap: 0.7rem;
