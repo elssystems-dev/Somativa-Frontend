@@ -1,9 +1,11 @@
 * {
+    /* edição que engloba todo o site */
     margin: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* editando o corpo do html */
 body {
     display: flex;
     align-items: center;
