@@ -1,4 +1,4 @@
-# 🌐 1ª Somativa de Programação Front-end 
+# 🌐 1ª Somativa de Programação Front-end
 
 ## 📋 Início da atividade
 Iniciamos a atividade somativa conversando com o grupo e juntos decidimos quais seriam as atividades realizadas:
