@@ -38,7 +38,7 @@ Escolha das cores, encontro dos ícones na internet e fazer ele rodar.
 
 Vídeos no Youtube, Font Awesome (para ícones), Google e sites sobre programação.
 
-### 🗿 Pedra / 📄 Papel / ✂️ Tesoura:
+### 🗿 Pedra / 📝 Papel / ✂️ Tesoura:
 
 #### Ideias
 
