@@ -32,7 +32,7 @@ Fazer um cronômetro que fique centralizado na tela, com botões interativos e u
 
 #### Dificuldades
  
-Escolha das cores e encontro dos ícones na internet.
+Escolha das cores, encontro dos ícones na internet e fazer ele rodar.
 
 #### Material de apoio 
 
@@ -54,5 +54,6 @@ IA Gemini para propor melhorias de código, como por exemplo usar um `lista.forE
 
 ## 📝 Conclusão
 
+No fim conseguimos finalizar o trabalho feito em grupo da melhor forma, finalizamos os códigos e fizemos diversos testes para garantir que tudo está seguindo o planejamento.
 Usar JavaScript para manipular o DOM demanda esforço principalmente na aplicação da lógica de execução do código, ao mesmo tempo se atentando com uma escrita limpa para melhor manutenibilidade futura.
 
